@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
   //TODO code to initialize the camera feed
   initializeCamera() async {
     //TODO initialize detector
-    final mode = DetectionMode.single;
+    const mode = DetectionMode.stream;
     // Options to configure the detector while using with base model.
     final options = ObjectDetectorOptions(
         mode: mode, classifyObjects: true, multipleObjects: true);
